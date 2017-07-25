@@ -1,0 +1,201 @@
+
+body {
+    padding: 50px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    background: url("img/skullsies.gif");
+
+}
+
+input, textarea {
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+}
+
+.edit-main-select {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 300px;
+    height: 30px;
+    margin: 0 auto;
+    padding-left: 10px;
+    line-height: 30px;
+    background-color: chartreuse;
+    border-radius: 25px;
+    user-select: none;
+    cursor: default;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(127,255,0,1);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(127,255,0,1);
+    box-shadow: 0px 0px 14px 0px rgba(127,255,0,1);
+}
+
+.ul-for-flex {
+    position: relative;
+
+}
+
+#dropper {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+
+    right: 0;
+    overflow: hidden;
+    background-color: yellow;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    transition: 0.2s;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(255,255,0,1);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(255,255,0,1);
+    box-shadow: 0px 0px 14px 0px rgba(255,255,0,1);
+}
+
+#dropper:hover {
+    cursor: pointer;
+}
+.selectedName {
+    padding-left: 10px;
+
+}
+
+.arrow {
+    position: absolute;
+    right: 15px;
+    font-size: 30px;
+    transition: 0.2s;
+    color: orange;
+
+}
+
+.arrow.openArrow {
+    transform: rotateZ(-90deg);
+}
+#dropper.openedBox {
+    height: 210px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 0;
+}
+
+.pad-of-drop {
+    padding-left: 10px;
+}
+.pad-of-drop:hover {
+    background-color: orange;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(255,165,0,1);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(255,165,0,1);
+    box-shadow: 0px 0px 14px 0px rgba(255,165,0,1);
+}
+.edit-main-type {
+    width: 280px;
+    height: 450px;
+    margin: 25px auto;
+    background-color: hotpink;
+    padding: 25px;
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 0px 14px 0px #FF69B4;
+    -moz-box-shadow: 0px 0px 14px 0px #FF69B4;
+    box-shadow: 0px 0px 14px 0px #FF69B4;
+}
+
+.title-to-edit {
+    display: block;
+    margin: 0 auto 25px auto;
+}
+.text-to-edit {
+    width: 100%;
+    height: 180px;
+    margin: 0 auto 25px auto;
+}
+
+.input-name {
+    display: block;
+    margin: auto auto 5px auto;
+    text-align: center;
+}
+
+input:focus::placeholder {
+    color: transparent;
+    transition: 0.2s;
+}
+
+textarea:focus::placeholder {
+    color: transparent;
+    transition: 0.2s;
+}
+.background-to-edit {
+    width: 100%;
+}
+#change-button {
+    display: block;
+    margin: 25px auto;
+    padding: 10px 20px;
+    background-color: inherit;
+    border: 2px solid white;
+    border-radius: 25px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+
+}
+
+.pad-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.oneThree-flex, .fourSix-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+
+
+
+.one-full-pad {
+    position: relative;
+    width: 280px;
+    height: 350px;
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 0px 14px 0px white;
+    -moz-box-shadow: 0px 0px 14px 0px white;
+    box-shadow: 0px 0px 14px 0px white;
+}
+.padName, .padText {
+    margin-top: 25px;
+    width: 100%;
+    text-align: center;
+}
+
+.padText {
+    overflow: hidden;
+    height: 200px;
+}
+
+.skull {
+    display: block;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 130px; left: 0; bottom: 0; right: 0;
+    font-size: 150px;
+    opacity: 0.2;
+    transition: 0.5s;
+    cursor: default;
+    user-select: none;
+
+
+}
+
+.skull.openSkull {
+    transform: rotateZ(1080deg);
+}
+
+
