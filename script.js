@@ -1,6 +1,4 @@
-/**
- * Created by Vasyl on 22.07.2017.
- */
+var h = document.querySelector('.openedBox');
 var EditBox = document.getElementsByClassName('edit-main-type');
 var dropBoxOne = document.getElementById('dropper');
 dropBoxOne.onclick = openBox;
@@ -40,7 +38,14 @@ window.onload = function() {
 
             setInterval(function () {
                 for (var n = 0; n < PaD.length; n++) {
-                    PaD[n].style.boxShadow = '0px 0px 14px 0px' + ' ' + PaD[i].style.backgroundColor;}
+
+                    if (PaD[n].style.backgroundColor) {
+                        PaD[n].style.boxShadow = '0px 0px 14px 0px' + ' ' + PaD[n].style.backgroundColor;
+                    } else {
+                        PaD[n].style.boxShadow = '0px 0px 14px 0px white';
+                    }
+                }
+
 
             }, 100);
         }
@@ -92,7 +97,17 @@ function editIt() {
     }
 }
 
+function showMore() {
+    document.getElementsByClassName('threeMore')[0].style.display = 'none';
+    document.getElementsByClassName('sevenNine-flex')[0].style.display = 'flex';
+    var newLi = document.createElement('li');
+    newLi.className = 'pad-of-drop';
+    newLi.innerHTML = +dropBoxOne.childNodes[13].textContent + 1;
+    dropBoxOne.appendChild(newLi);
 
+
+
+}
 
 
 

@@ -146,7 +146,7 @@ textarea:focus::placeholder {
     margin: 0 auto;
 }
 
-.oneThree-flex, .fourSix-flex {
+.oneThree-flex, .fourSix-flex, .sevenNine-flex {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -190,12 +190,29 @@ textarea:focus::placeholder {
     transition: 0.5s;
     cursor: default;
     user-select: none;
-
-
 }
 
 .skull.openSkull {
     transform: rotateZ(1080deg);
 }
 
+.sevenNine-flex {
+    display: none;
+}
 
+.threeMore {
+    display: block;
+    margin: 25px auto;
+    padding: 10px 20px;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 14px 0px white;
+    -moz-box-shadow: 0px 0px 14px 0px white;
+    box-shadow: 0px 0px 14px 0px white;
+    border: 2px solid white;
+    border-radius: 25px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+}
